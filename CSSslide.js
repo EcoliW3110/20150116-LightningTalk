@@ -63,7 +63,7 @@ var CSSslide={
 	if(slides[i].tagName=="DIV"){
 		var revArr = slides[i].getElementsByClassName("reveal");
 		for(var j=0; j<=revArr.length;j++){
-if(j!=0) revArr[j-1].style.display='initial';
+if(j!=0) revArr[j-1].style.opacity=1.0;
    CSSslide.slide.push({"innerHTML":slides[i].innerHTML,"s":slides[i].getAttribute("style"),"c":slides[i].getAttribute("class")});
    }
    }
