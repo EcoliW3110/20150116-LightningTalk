@@ -61,7 +61,11 @@ var CSSslide={
   var slides=document.getElementsByTagName("body")[0].childNodes;
   for(var i=0;i<slides.length;i++){
 	if(slides[i].tagName=="DIV"){
+		var revArr = slides[i].getElementsByClassName("reveal");
+		for(var j=0; j<=revArr.length;j++){
+if(j!=0) revArr[j-1].style.display='inherit';
    CSSslide.slide.push({"innerHTML":slides[i].innerHTML,"s":slides[i].getAttribute("style"),"c":slides[i].getAttribute("class")});
+   }
    }
   }
   //DIV がなかったとき
