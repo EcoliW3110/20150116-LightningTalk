@@ -42,8 +42,6 @@ var CSSslide={
  //初期化
  init:function(){
   //イベントリスナの登録
-   document.onmousedown=CSSslide.mouseListener;
-  document.onkeydown=CSSslide.keyListener;
   if(_ua.Mobile || _ua.Tablet){
 //この中のコードはスマホとタブレットにのみ適用
 
