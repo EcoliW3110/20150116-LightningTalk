@@ -24,6 +24,9 @@
 .enlightened{
 	color:#2BED1A;
 }
+.reveal{
+	display: none;
+	}
 code{
 	color: #ebbc4a;
 	font-family: "Courier","Courier New",  "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", monospace, sans-serif;
