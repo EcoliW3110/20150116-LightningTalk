@@ -1,3 +1,5 @@
+// CSSslide.js v1.1 Modified by EcoliW3110
+
 // CSSslide.js v1.0 Copyright (C)thira ( http://thira.plavox.info/ )
 // Licensed under Creative Commons Attribution 2.1 Japan ( http://creativecommons.org/licenses/by/2.1/jp/ )
 // Licensed under MIT License (http://www.opensource.org/licenses/mit-license.php)
