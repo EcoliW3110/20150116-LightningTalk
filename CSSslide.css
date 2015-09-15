@@ -51,7 +51,7 @@ code{
 	padding-left: 0.5em;
 	/* [disabled]padding-bottom: 0.5em; */
 	}
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6,h7{
 	font-weight: normal;	
 	
   color: #59fbea;
@@ -93,11 +93,18 @@ h1,h2,h3,h4,h5{
 	padding: 0em;
 	color: #00bab5
  }
+   h7{
+	font-size: 60%;
+	margin: 0em;
+	padding: 0em;
+	color: #00bab5
+ }
  a{
 	color: #59fbea; 
  }
  
- img{float:left;}
+ img{
+ background-color:#FFFFFF;}
 }
 li{
 	list-style-position: inside;
