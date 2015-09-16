@@ -59,15 +59,17 @@
 <h1>理論編</h1>
 </div>
 
+
 <div>
 <h1>パスコードの仕様</h1>
 <div class="wrapper">
-<h3>パスコードには決まったフォーマットがある</h3>
-<ul>
+<h3>Ingressの暗号は「解かせるための暗号」です！なので…</h3>
+<h3 class="reveal">パスコードには決まったフォーマットがあります</h3>
+<ul class="reveal">
 <li>通常フォーマット</li>
 <li>長持ちフォーマット</li>
 </ul>
-<h4>フォーマットはデコードのための大ヒント!!</h4>
+<h4 class="reveal">フォーマットはデコードのための大ヒント!!</h4>
 </div>
 </div>
 
@@ -107,17 +109,19 @@
 <p>既出キーワードリストがあります</p>
 <a href="http://sql.jackt.net/sorted.txt" target="_blank">http://sql.jackt.net/sorted.txt</a>
 <h5> (Thanks AG <span class="enlightened">@sql</span>!)</h5>
+<img src="./imgs/URL_KWlist.gif" />
 </div>
 </div>
+
 
 <div>
 <h1>暗号入門</h1>
 <div class="wrapper">
-<h3>Ingressの暗号は「解かせるための暗号」です！</h3>
+<h3>もう一度:Ingressの暗号は「解かせるための暗号」です！</h3>
 <ul>
 <li>「場所を入れ替える」</li>
 <li>「文字を置き換える」</li></ul>
-<p>これだけ押さえればOK!</p>
+<p>これだけ押さえればとりあえずOK!</p>
 
 
 </div>
@@ -138,7 +142,19 @@
 <div>
 <h1>「場所を入れ替える」転置式暗号</h1>
 <div class="wrapper">
-<code>例1 <span class="reveal">シーザーボックス暗号</span></code>
+<code>例1 <span class="reveal">Reverse</span></code>
+<code>amijawU evol eW</code>
+<h3 class="reveal">↓鍵: 後ろから読むだけ</h3>
+<div class="reveal">
+<code>We love Uwajima</code>
+</div>
+</div>
+</div>
+
+<div>
+<h1>「場所を入れ替える」転置式暗号</h1>
+<div class="wrapper">
+<code>例2 <span class="reveal">シーザーボックス暗号</span></code>
 <code>Wlewieo amvUja 
 </code>
 <h3 class="reveal">↓鍵:3文字ごとに改行、左から縦読み</h3>
@@ -157,7 +173,7 @@ ima
 <div>
 <h1>「場所を入れ替える」転置式暗号</h1>
 <div class="wrapper">
-<code>例2 <span class="reveal">レールフェンス暗号</span></code>
+<code>例1 <span class="reveal">レールフェンス暗号</span></code>
 <code>
 WoUielv wjm eaa
 </code>
@@ -187,16 +203,13 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 </div>
 </div>
 
-
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
-<code>例2 <span class="reveal">ヴィジュネル暗号</span></code>
-<code>Gi jyzc Eaytmkk</code>
-<div  class="reveal">
-<h3>↓鍵:"key" ヴィジュネル方陣を使います</h3>
-<img  style="height:50%; float:right;" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png" >
-<h7 style="clear:both">出典: https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png</h7></div>
+<code>例2 <span class="reveal">Atbash</span></code>
+<code>Dv olev Fdzqrnz</code>
+<h3 class="reveal">↓鍵:AをZ, BをY…に置き換える</h3>
+
 <code  class="reveal">We  love Uwajima</code>
 
 </div>
@@ -205,13 +218,56 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
+<code>例3 <span class="reveal">ヴィジュネル暗号</span></code>
+<code>Gi jyzc Eaytmkk</code>
+<div  class="reveal">
+<h3>↓鍵:"key" ヴィジュネル方陣を使います</h3>
+
+<figure style="
+    top: 30%;
+    position: absolute;
+    right: 10%;
+">
+<img  style="height:50%;float: right; " src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png" / >
+<figcaption style="  clear: both;
+    float: right; ">出典: https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png
+</figcaption>
+</figure>
+
+</div>
+<code  class="reveal">We  love Uwajima</code>
+
 </div>
 </div>
 
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
+<code>例4 <span class="reveal">ASCIIコード</span></code>
+<code>5a 68 20 6f 72 79 68 20 58 7a 64 6d 6c 70 64 </code>
+<h3 class="reveal">↓鍵:16進ASCIIコード</h3>
+
+<code  class="reveal">We love Uwajima</code>
+
+<span class="reveal">10進・8進・2進などなど…</span>
 </div>
+</div>
+
+<div>
+<h1>「文字を置き換える」換字式暗号</h1>
+<div class="wrapper">
+<h3>その他いろいろ</h3>
+<ul>
+<li>モールス符号</li>
+<li>点字(Braille)</li>
+<li>Base64</li>
+</ul>
+</div>
+</div>
+
+
+<div class="cover">
+<h1>実践編</h1>
 </div>
 
 </body>

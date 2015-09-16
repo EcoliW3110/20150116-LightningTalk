@@ -105,7 +105,13 @@ h1,h2,h3,h4,h5,h6,h7{
  
  img{
  background-color:#FFFFFF;}
-}
+figcaption{
+	
+	font-size: 60%;
+	margin: 0em;
+	padding: 0em;
+	color: #00bab5
+	}
 li{
 	list-style-position: inside;
 	display:list-item;
@@ -113,6 +119,8 @@ li{
 	}
 ul {
 	marker-offset: 0.5em;
+}
+
 }
 
 @media screen{
