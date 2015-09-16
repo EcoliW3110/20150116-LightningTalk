@@ -38,7 +38,7 @@ var CSSslide={
  fontSizeRatio:100, //フォントの拡大率(%)
  fontSizeRatioDefault:100, //元のフォントの拡大率(%)
  enableLoop:1, //ループ機能
- initialDialogue:"<h3  onclick=\"this.parentNode.parentNode.removeChild(this.parentNode);   document.body.style.overflow='auto';CSSslide.setSlide();\">スライドモードで見る</h3><h3 onclick=\"this.parentNode.parentNode.removeChild(this.parentNode);document.body.style.overflow='auto';CSSslide.setResume();\">レジュメモードで見る</h3>",
+ initialDialogue:"<h3  onclick=\"this.parentNode.parentNode.removeChild(this.parentNode);   document.body.style.overflow='auto';CSSslide.setSlide();\" style=\"cursor:pointer;\">スライドモードで見る</h3><h3 onclick=\"this.parentNode.parentNode.removeChild(this.parentNode);document.body.style.overflow='auto';CSSslide.setResume();\" style=\"cursor:pointer;\">レジュメモードで見る</h3>",
  usagePage:"<blockquote><h3>このプレゼンツールの使い方</"+"h3><ul><li>← / → : 戻る / 進む<"+"/li><li>&lt; / &gt; : 文字を大きく / 小さく<"+"/li><li>5 : 文字を元の大きさにする<"+"/li><li>0 : 表紙に戻る<"+"/li><li>F11 : フルスクリーンモードにする<"+"/li><"+"/ul><"+"/blockquote>",
  restartPage:"<p style=\"text-align:center\">最後のスライドです<br /><a href=\"#\" onclick=\"CSSslide.restart();return false;\">表紙に戻る<"+"/a><"+"/p>",
  errorNotFoundDiv:"<p>エラー: &lt;div&gt; が見つかりません。<"+"/p>",
@@ -70,6 +70,7 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
 },
 	 
 setSlide:function(){	 
+document.body.style.cursor="pointer";
   //イベントリスナの登録
   if(_ua.Mobile || _ua.Tablet){
 //この中のコードはスマホとタブレットにのみ適用
