@@ -5,6 +5,7 @@
 <title>Ingress Decoding Seminar</title>
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Coda">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="./CSSslide.css" type="text/css" />
 <script type="text/javascript" src="./CSSslide.js"></script>
 
@@ -268,6 +269,169 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 
 <div class="cover">
 <h1>実践編</h1>
+<h3>〜ごたくよりも手を動かそう〜</h3>
+</div>
+
+<div>
+<h1>便利なツールたち</h1>
+<div class="wrapper">
+<ul>
+<li><a href="http://tools.decodeingress.me/" style="text-decoration:line-through">DI Decoding Tools</a> 現在なぜか動きません</li>
+<li><a href="http://multidec.web-lab.at/">Multi-Dec BETA 0.994</a></li>
+<li><a href="http://rumkin.com/tools/cipher/">rumkin.com Cipher Tools</a></li>
+</ul>
+<!---inline-blockでQRコードキャプションつきを並べる--->
+</div>
+</div>
+
+<div>
+<h1>初級編</h1>
+<div class="wrapper">
+<h2>1ステップで解読完了します</h2>
+<h3>転置式暗号</h3>
+<code>7ur86ux6noitulove</code>
+<code>82niyhinycrv47ie</code>
+
+<h3>換字式暗号</h3>
+<code>fwyghwjz4rb58mv1</code>
+<code>sfyvig4hf42jg2</code>
+<code>0317141304j1702ii0924f</code>
+
+<h3>キーワード置換</h3>
+<code>!@*%(*)4ye57bs7</code>
+
+
+</div>
+</div>
+
+<div>
+<h1>初級編解答 転置式暗号</h1>
+<div class="wrapper">
+<code>7ur86ux6noitulove</code>
+<p class="reveal">ヒント:どう場所を入れ替えればフォーマット通りになるでしょう？</p>
+<h3 class="reveal">答え: 逆から読もう</h3>
+<code class="reveal">evolution6xu68ru7</code>
+</div>
+</div>
+
+<div>
+<h1>初級編解答 転置式暗号</h1>
+<div class="wrapper">
+<code>82niyhinycrv47ie</code>
+<p class="reveal">ヒント: とりあえず改行</p>
+<h3 class="reveal">答え: まず4文字ずつ改行します</h3>
+<code class="reveal">
+82ni<br />
+yhin<br />
+ycrv<br />
+47ie</code>
+<h3 class="reveal">右上から縦に読んでみよう</h3>
+<code>inveniri2hc78yy4</code>
+</div>
+</div>
+
+
+<div>
+<h1>初級編解答 換字式暗号</h1>
+<div class="wrapper">
+<code>fwyghwjz4rb58mv1</code>
+<p class="reveal">ヒント:atbashかRotを試そう</p>
+<h3 class="reveal">答え: Rot+4(数字も)</h3>
+<code class="reveal">jackland8vf92qz5</code>
+</div>
+</div>
+
+<div>
+<h1>初級編解答 換字式暗号</h1>
+<div class="wrapper">
+<code>sfyvig4hf42jg2</code>
+<p class="reveal">ヒント:atbashかRotを試そう</p>
+<h3 class="reveal">答え: atbash(数字はそのまま)</h3>
+<code class="reveal">hubert4su42qt2</code>
+</div>
+</div>
+
+
+<div>
+<h1>初級編解答 換字式暗号</h1>
+<div class="wrapper">
+<code>0317141304j1702ii0924f</code>
+<p class="reveal">ヒント: フォーマットをヒントに区切ってみよう</p>
+<h3 class="reveal">答え: 012<->abc</h3>
+<code class="reveal">drone9rc88jy5</code>
+</div>
+</div>
+
+
+
+<div>
+<h1>初級編解答 キーワード置換</h1>
+<div class="wrapper">
+<code>!@*%(*)4ye57bs7</code>
+<p class="reveal">ヒント: !@*%(*) と置換できそうなキーワードを探そう</p>
+<h3 class="reveal">答え: !@*%(*) -> symbols</h3>
+<code class="reveal">symbols4ye57bs7</code>
+</div>
+</div>
+
+<div class="cover">
+<h1>暗号発見編</h1>
+</div>
+
+<div>
+<h1>出題アカウント</h1>
+<div class="wrapper">
+Niantic Projectの公式アカウント
+<!--スクショ、リンク-->
+</div>
+</div>
+
+<div>
+<h1>出題方式</h1>
+<div class="wrapper">
+
+<ul>
+<li>G+に投稿される画像※再共有含む</li>
+<li>Youtubeに投稿されるIngress Report</li>
+<li>Facebookのリンク投稿</li>
+
+</ul>
+</div>
+</div>
+
+<div>
+<h1>画像から暗号を見つける方法</h1>
+<div class="wrapper">
+<ul>
+<li>png画像とjpg画像の2種類</li>
+<li>png画像…画像中に薄い文字で暗号が書いてある</li>
+<ul class="reveal"><li>画像をフォトレタッチソフトでコントラスト調整→書き起こし！</li></ul>
+<li>jpg画像…画像のメタデータに暗号が仕込まれている</li>
+<ul class="reveal"><li>画像をダウンロード→メタデータを見られるサイトに放り込む！</li>
+<li>メタデータを見られるサイト: <a href="http://metapicz.com/#landing">metapicz</a>など</li></ul>
+</div>
+</div>
+
+<div>
+<h1>Ingress Reportから暗号を見つける方法</h1>
+<div class="wrapper">
+<ul>
+<li>動画中の注釈として暗号が表示される</li>
+<li>動画をスローモーション再生して注釈を探す</li>
+<li class="reveal">そんな必要はありません！</li>
+<ul class="reveal"><li>https://www.youtube.com/annotations_invideo?video_id= にビデオIDをつけて飛ぶ</li></ul>
+</ul>
+</div>
+</div>
+
+<div>
+<h1>Facebookのリンク投稿から暗号を見つける方法</h1>
+<div class="wrapper">
+<ul>
+<li>Facebook投稿を見る</li>
+<ul class="reveal"><li>リンク記事の注釈欄に暗号があるのでコピペorソースを見て該当部分をコピペ</li></ul>
+</ul>
+</div>
 </div>
 
 </body>

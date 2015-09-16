@@ -16,7 +16,7 @@
  }
  .centering{ 
  text-align:center;}
- .monospace{  font-family:"Courier","Courier New",  "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", monospace, sans-serif;
+ .monospace{  font-family:"Courier","Courier New",  "ＭＳ ゴシック", "MS Gothic",  'Roboto Mono', "Osaka－等幅", monospace;
 }
 .resistance{
 	color:#00BFFF;
@@ -152,25 +152,9 @@ dd{
  }
 
 @media print{
+	 body{
+	background: #FFFFFF;
+	color: #000000;
 	
-div p{margin-left:2em;}
- p li {
-	line-height: 50%;
  }
-body div ul {
-}
-	body{font-size:10.5pt;}
- div.section{page-break-inside:avoid;
-page-break-before:always;}
- dt{
-	font-weight: bold;
-	float: left;
-	clear: left;
-	margin-left:1em;
-	margin-right: 0.5em;
-}
-dd{
-	margin-left: 3em;
-	margin-bottom: 0.5em;
-}
 }

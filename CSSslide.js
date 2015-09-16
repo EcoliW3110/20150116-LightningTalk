@@ -53,7 +53,8 @@ var CSSslide={
 	   initialDialogue.style.cssText="position: absolute;top: 0px; bottom: 0px; left: 0px; right: 0px; background-color: #000000; text-align: center; padding: 8em";
 	
    document.body.insertBefore(initialDialogue,document.body.childNodes[0]);
-   document.body.style.overflow="hidden";
+ document.body.scrollTop=0;
+//   document.body.style.overflow="hidden";
 
   }else{
 	  CSS.setSlide();}
