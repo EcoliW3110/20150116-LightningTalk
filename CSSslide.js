@@ -150,11 +150,11 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  mouseListener:function(evt){
 	
   var bt=(document.all)?(event.button==1?0:(event.button==4)?1:event.button):evt.button;
-  if((evt.target.tagName!="A"||evt.target.tagName!="CODE")&&bt==0){ CSSslide.move(CSSslide.nowPage+1); }
+  if((evt.target.tagName!="A"&&evt.target.tagName!="CODE")&&bt==0){ CSSslide.move(CSSslide.nowPage+1); }
  },
 
  touchListener:function(evt) {
- if(evt.target.tagName!="A"||evt.target.tagName!="CODE"){ CSSslide.move(CSSslide.nowPage+1); }
+ if(evt.target.tagName!="A"&&evt.target.tagName!="CODE"){ CSSslide.move(CSSslide.nowPage+1); }
 },
  //aka.$-function
  gID:function(id){ return(document.getElementById(id)); }
