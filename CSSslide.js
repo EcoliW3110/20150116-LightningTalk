@@ -27,6 +27,71 @@ var _ua = (function(u){
   }
 })(window.navigator.userAgent.toLowerCase());
 
+
+	    var touchStartX;
+    var touchStartY;
+    var touchMoveX;
+    var touchMoveY;
+	var touchMoveFlag = false;
+	var startTime;
+	var endTime;
+	var diffTime;
+	 
+function flickDetection(event){
+	
+	console.log(event);	
+
+switch( event.type )
+{    // 開始時
+    case "touchstart":
+	
+    event.preventDefault();
+    // 座標の取得
+    touchStartX = event.touches[0].pageX;
+    touchStartY = event.touches[0].pageY;
+	startTime = +new Date();
+ break;
+	
+    // 移動時
+   case "touchmove":
+    event.preventDefault();
+    // 座標の取得
+    touchMoveX = event.changedTouches[0].pageX;
+    touchMoveY = event.changedTouches[0].pageY;
+	touchMoveFlag = true;
+    break;
+	
+    // 終了時
+  case "touchend": 
+		endTime = +new Date();
+		diffTime = endTime - startTime;
+		
+		console.log(touchStartX - touchMoveX);
+    // 移動量の判定
+	if(diffTime < 400 &&(!touchMoveFlag || Math.abs(touchMoveX-touchStartX)<=100)){
+		 if(event.target.tagName=="A"){
+			console.log(event.target);
+			window.open( event.target.href, null)
+			}
+		else  if(event.target.tagName!="CODE"){ CSSslide.move(CSSslide.nowPage+1); }
+		}
+	else if (diffTime < 400 && touchMoveFlag) {
+    if (touchStartX > touchMoveX) {
+        if (touchStartX > (touchMoveX + 100)) {
+        CSSslide.move(CSSslide.nowPage+1);//右から左に指が移動した場合
+		} 
+    } else if (touchStartX < touchMoveX) {
+        if ((touchStartX + 100) < touchMoveX) {
+        CSSslide.move(CSSslide.nowPage-1);//左から右に指が移動した場合
+        } 
+    }}
+	touchMoveFlag = false;
+	break;
+	
+}
+}
+
+
 var CSSslide={
  slide:[], //スライドが入る配列
  nowPage:0, //現在のページ
@@ -74,7 +139,11 @@ document.body.style.cursor="pointer";
   //イベントリスナの登録
   if(_ua.Mobile || _ua.Tablet){
 //この中のコードはスマホとタブレットにのみ適用
-  document.ontouchstart=CSSslide.touchListener;
+	//  document.addEventListener("ontouchstrat",console.log(event),false);
+document.addEventListener("touchstart",flickDetection,false);
+  document.addEventListener("touchmove",flickDetection,false);
+  document.addEventListener("touchend",flickDetection,false);
+	//  document.ontouchend=CSSslide.touchListener;
 	  document.onkeydown=CSSslide.keyListener;
 }else{
 //この中のコードはスマホとタブレット以外に適用
@@ -154,10 +223,12 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  },
 
  touchListener:function(evt) {
- if(evt.target.tagName!="A"&&evt.target.tagName!="CODE"){ CSSslide.move(CSSslide.nowPage+1); }
+
 },
  //aka.$-function
  gID:function(id){ return(document.getElementById(id)); }
 };
 
+	
+	
 window.onload=CSSslide.init;
