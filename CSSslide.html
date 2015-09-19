@@ -89,6 +89,7 @@
 <div class="reveal">
 <h3>共通点</h3>
 <code>#aaa#(keyword)a#a#a</code>
+※ 数字は2-9だけ
 </div>
 </div>
 </div>
@@ -102,6 +103,7 @@
 <div class="reveal">
 <h3>共通点</h3>
 <code>(keyword)#aa##aa#</code>
+※ 数字は0-9
 </div>
 </div>
 </div>
@@ -217,6 +219,8 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 </div>
 </div>
 
+
+
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
@@ -259,6 +263,20 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 <li>モールス符号</li>
 <li>点字(Braille)</li>
 <li>Base64</li>
+</ul>
+</div>
+</div>
+
+<div>
+<h1>数字の表現いろいろ</h1>
+<div class="wrapper">
+<h3>数字がアラビア数字のまま暗号化されてるとは限りません</h3>
+<ul>
+<li>英語 (one, two, three...)</li>
+<li>英語の先頭n文字 (on, tw, th...)</li>
+<li>ローマ数字 (i, ii, iii...)</li>
+<li>アルファベット順 (b, c, d...)</li>
+<li>記号 (!,@,#...)</li>
 </ul>
 </div>
 </div>
@@ -438,7 +456,7 @@ Ingressの公式アカウント
 <ul>
 <li>Facebook投稿を見る</li>
 <ul class="reveal"><li>リンク記事の注釈欄に暗号があるのでコピペorソースを見て該当部分をコピペ</li></ul>
-</ul>
+</ul><img src="imgs/SS_FB_Niantic.png" class="reveal" width=50% alt=""/>
 </div>
 </div>
 
@@ -470,7 +488,6 @@ Ingressの公式アカウント
 <h3>転置式暗号</h3>
 <code>17679808274598486525574865</code>
 <code>22282324391030370113220106262608</code>
-<code>3ra96eh2murev</code>
 <code>whuyfqdqfa1jw87zj4</code>
 <code>sent3vfti4miz3</code>
 <code>zcdsdbshnm8dj16tw2</code>
@@ -508,19 +525,6 @@ Ingressの公式アカウント
 <div>
 <h1>中級編解答</h1>
 <div class="wrapper">
-<code>3ra96eh2murev</code>
-<p class="reveal">ヒント:まずはリバース、そして…</p>
-<code class="reveal">verum2he69ar3</code>
-<h3 class="reveal">答え: リバース→キーワード置換(verum → inveniri)</h3>
-<code class="reveal">inveniri2he69ar3</code>
-</div>
-</div>
-
-
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
 <code>whuyfqdqfa1jw87zj4</code>
 <p class="reveal">ヒント:基礎的な換字式暗号の組み合わせ</p>
 <code class="reveal">xivzgrergb2kx98ak5</code>
@@ -528,5 +532,52 @@ Ingressの公式アカウント
 <code class="reveal">creativity2pc98zp5</code>
 </div>
 </div>
+
+<div>
+<h1>中級編解答</h1>
+<div class="wrapper">
+<code>sent3vfti4miz3</code>
+<p class="reveal">ヒント: 転置式暗号と換字式暗号の組み合わせ</p>
+
+<h3 class="reveal">答え: まずRect7→縦読み</h3>
+<code class="reveal">
+sent3vf<br />
+ti4miz3</code>
+<code class="reveal">stein4tm3ivzf3</code>
+<h3 class="reveal">答え: ivを4に、steinをlightmanに</h3>
+<code class="reveal">lightman4tm34zf3</code>
+</div>
+</div>
+
+<div>
+<h1>中級編解答</h1>
+<div class="wrapper">
+<code>zcdsdbshnm8dj16tw2</code>
+<p class="reveal">ヒント: 換字式暗号、そして…</p>
+
+
+<code class="reveal">adetection9ek27ux3</code>
+<h3 class="reveal">答え: Rot+1, A detection → algorithm</h3>
+<code class="reveal">algorithm9ek27ux3</code>
+</div>
+</div>
+
+<div>
+<h1>さらなるデコード手法を知るには</h1>
+<div class="wrapper">
+<h3>英語</h3>
+<ul><li><a href="http://decodeingress.me/category/decoding-2/" target="_blank">DeCode Ingress, Decode カテゴリ</a></li>
+<li><a href="https://docs.google.com/document/d/1D9kpomptLEP3AJo0M8XQLdVma2jKHh_9T4ptCbLYkwg/edit" target="_blank">Starters Guide Solving Passcodes</a></li>
+</ul>
+
+<h3>日本語</h3>
+<ul>
+<li><a href="https://note.mu/t_tutiya/n/n212e3328b992" target="_blank">Ingress : パスコードの発見／解読方法の例（翻訳記事）</a></li>
+<li><a href="http://blog.livedoor.jp/lava3/search?q=CODE+BREAKING" target="_blank">未来永劫初心者日記: Ingress:CODE BREAKING 暗号解読</a></li>
+<li><a href="http://aganism.com/game/ingress/passcodes-decoding/" target="_blank">Aganism: 【Ingressのパスコード 解読してみた】動画観てたらそれっぽいものを見つけたもので…</a></li>
+
+</div>
+</div>
+
 
 </body>
