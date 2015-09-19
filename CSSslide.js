@@ -210,8 +210,8 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  //キーが押されたとき
  keyListener:function(evt){
 	  var kc=(document.all)?event.keyCode:evt.keyCode;
-  if(kc==39||kc==13||kc==34){ CSSslide.move(CSSslide.nowPage+1); }
-  else if(kc==37||kc==33){ CSSslide.move(CSSslide.nowPage-1); }
+  if(kc==39||kc==13||kc==34){ evt.preventDefault(); CSSslide.move(CSSslide.nowPage+1); }
+  else if(kc==37||kc==33){ evt.preventDefault(); CSSslide.move(CSSslide.nowPage-1); }
   else if(kc==188){ CSSslide.fontResize(CSSslide.fontSizeRatio-10);  }
   else if(kc==190){ CSSslide.fontResize(CSSslide.fontSizeRatio+10);  }
   else if(kc==53||kc==101){ CSSslide.fontResize(CSSslide.fontSizeRatioDefault);  }
