@@ -39,13 +39,12 @@ var _ua = (function(u){
 	 
 function flickDetection(event){
 	
-	console.log(event);	
 
 switch( event.type )
 {    // 開始時
     case "touchstart":
 	
-    event.preventDefault();
+//    event.preventDefault();
     // 座標の取得
     touchStartX = event.touches[0].pageX;
     touchStartY = event.touches[0].pageY;
@@ -68,12 +67,14 @@ switch( event.type )
 		
 		console.log(touchStartX - touchMoveX);
     // 移動量の判定
+
 	if(diffTime < 400 &&(!touchMoveFlag || Math.abs(touchMoveX-touchStartX)<=100)){
 		console.log(event.target);
 		 if(event.target.tagName=="A"){
 			window.open( event.target.href, null)
 			}else  if(event.target.tagName=="CODE"){
-		var rng =  document.createRange.selectNodeContents(event.target);
+		var raneg =  document.createRange();
+		raneg.selectNodeContents(event.target);
 		window.getSelection().addRange(rng);}
 		else { CSSslide.move(CSSslide.nowPage+1); }
 		}
@@ -208,8 +209,7 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  restart:function(){ (CSSslide.enableUsagePage==1)?CSSslide.move(1):CSSslide.move(0);  },
  //キーが押されたとき
  keyListener:function(evt){
-	 	console.log(evt);
-  var kc=(document.all)?event.keyCode:evt.keyCode;
+	  var kc=(document.all)?event.keyCode:evt.keyCode;
   if(kc==39||kc==13||kc==34){ CSSslide.move(CSSslide.nowPage+1); }
   else if(kc==37||kc==33){ CSSslide.move(CSSslide.nowPage-1); }
   else if(kc==188){ CSSslide.fontResize(CSSslide.fontSizeRatio-10);  }
@@ -220,7 +220,6 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  },
  //マウスが押されたとき
  mouseListener:function(evt){
-	console.log(evt);
   var bt=(document.all)?(event.button==1?0:(event.button==4)?1:event.button):evt.button;
   if((evt.target.tagName!="A"&&evt.target.tagName!="CODE")&&bt==0){ CSSslide.move(CSSslide.nowPage+1); }
  },
