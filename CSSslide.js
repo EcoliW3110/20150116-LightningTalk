@@ -69,11 +69,13 @@ switch( event.type )
 		console.log(touchStartX - touchMoveX);
     // 移動量の判定
 	if(diffTime < 400 &&(!touchMoveFlag || Math.abs(touchMoveX-touchStartX)<=100)){
+		console.log(event.target);
 		 if(event.target.tagName=="A"){
-			console.log(event.target);
 			window.open( event.target.href, null)
-			}
-		else  if(event.target.tagName!="CODE"){ CSSslide.move(CSSslide.nowPage+1); }
+			}else  if(event.target.tagName=="CODE"){
+		var rng =  document.createRange.selectNodeContents(event.target);
+		window.getSelection().addRange(rng);}
+		else { CSSslide.move(CSSslide.nowPage+1); }
 		}
 	else if (diffTime < 400 && touchMoveFlag) {
     if (touchStartX > touchMoveX) {
@@ -206,9 +208,10 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  restart:function(){ (CSSslide.enableUsagePage==1)?CSSslide.move(1):CSSslide.move(0);  },
  //キーが押されたとき
  keyListener:function(evt){
+	 	console.log(evt);
   var kc=(document.all)?event.keyCode:evt.keyCode;
-  if(kc==39||kc==13){ CSSslide.move(CSSslide.nowPage+1); }
-  else if(kc==37){ CSSslide.move(CSSslide.nowPage-1); }
+  if(kc==39||kc==13||kc==34){ CSSslide.move(CSSslide.nowPage+1); }
+  else if(kc==37||kc==33){ CSSslide.move(CSSslide.nowPage-1); }
   else if(kc==188){ CSSslide.fontResize(CSSslide.fontSizeRatio-10);  }
   else if(kc==190){ CSSslide.fontResize(CSSslide.fontSizeRatio+10);  }
   else if(kc==53||kc==101){ CSSslide.fontResize(CSSslide.fontSizeRatioDefault);  }
@@ -217,7 +220,7 @@ if(j!=0) revArr[j-1].style.opacity=1.0;
  },
  //マウスが押されたとき
  mouseListener:function(evt){
-	
+	console.log(evt);
   var bt=(document.all)?(event.button==1?0:(event.button==4)?1:event.button):evt.button;
   if((evt.target.tagName!="A"&&evt.target.tagName!="CODE")&&bt==0){ CSSslide.move(CSSslide.nowPage+1); }
  },
