@@ -17,13 +17,12 @@
 <body>
 
 <div class="cover">
-<h1>Ingress Decoding Seminar</h1>
+<h1>Aomaly Lightning Talk</h1>
 <div class="wrapper">
 <h3>Presented by <span class="resistance">井伊狐狸(EcoliW3110)</span></h3>
-<h4>2015/9/20 @愛媛県宇和島市</h4>
+<h4>2016/1/16 @青山学院大学相模原キャンパス</h4>
 <figure>
-<img src="./imgs/URL_SlideOkiba.gif" class="QRCode" style="float:right"/>
-<figcaption style="clear:both;float:right">スライド置き場はこちら！</figcaption>
+<figcaption style="clear:both;float:right">スライド置き場は ！</figcaption>
 <figcaption style="clear:both;float:right"><a href="http://ecoliw3110.github.io/20150920-decodingSeminar/IngressDecodeCheatSheet.pdf" target="_blank">チートシートはこちらのリンクからどうぞ</a></figcaption>
 </figure>
 </div>
@@ -34,21 +33,16 @@
 </div>
 
 <div>
-<h1>デコードってなんぞ？</h1>
+<h1>デコードとは？</h1>
 <div class = "wrapper">
 (ingressにおいては)暗号化されたパスコードを復号し、有効な「パスコード」を導くこと。
 </div>
 </div>
 
 <div>
-<h1>パスコードってなんぞ？</h1>
+<h1>パスコードとは？</h1>
 <div class="wrapper">
 <p>スキャナやintel mapに入力するとアイテムが貰える文字列のこと。</p>
-<div class="reveal">
-<h2>実際に使ってみましょう</h2>
-<code>例: bletchley9ob65ca4</code>
-<a href="https://www.ingress.com/intel" target="_blank"> https://www.ingress.com/intel</a>
-</div>
 </div>
 </div>
 
@@ -65,7 +59,6 @@
 <h1>理論編</h1>
 </div>
 
-
 <div>
 <h1>パスコードの仕様</h1>
 <div class="wrapper">
@@ -79,8 +72,6 @@
 </div>
 </div>
 
-
-
 <div>
 <h1>パスコードフォーマット ―通常フォーマット―</h1>
 <div class="wrapper">
@@ -90,7 +81,7 @@
 <div class="reveal">
 <h3>共通点</h3>
 <code>#aaa#(keyword)a#a#a</code>
-※ 数字は2-9だけ
+※ 数字は通常2-9だけ
 </div>
 </div>
 </div>
@@ -104,7 +95,7 @@
 <div class="reveal">
 <h3>共通点</h3>
 <code>(keyword)#aa##aa#</code>
-※ 数字は0-9
+※ 数字は通常2-9だけ
 </div>
 </div>
 </div>
@@ -116,7 +107,6 @@
 <h3>イングレス関係単語(登場人物名、グリフ名etc)など</h3>
 <p>既出キーワードリストがあります</p>
 <p><a href="http://tools.decodeingress.me/#/keywords" target="_blank">http://tools.decodeingress.me/#/keywords</a></p>
-<img src="./imgs/URL_KWlist.gif" class="QRCode" />
 </div>
 </div>
 
@@ -175,23 +165,6 @@ eo am<br />
 </div>
 </div>
 
-<div>
-<h1>「場所を入れ替える」転置式暗号</h1>
-<div class="wrapper">
-<code>例3 <span class="reveal">レールフェンス暗号</span></code>
-<code>
-WoUielv wjm eaa
-</code>
-<h3 class="reveal">↓鍵:3段のジグザグ</h3>
-<div class="reveal">
-<code>
-W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
-&nbsp;e&nbsp;l&nbsp;v&nbsp;&nbsp;&nbsp;w&nbsp;j&nbsp;m&nbsp;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;&nbsp;a<br />
-</code>
-</div>
-</div>
-</div>
 
 
 <div>
@@ -225,28 +198,7 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
-<code>例3 <span class="reveal">ヴィジュネル暗号</span></code>
-<code>Gi jyzc Eaytmkk</code>
-<div  class="reveal">
-<h3>↓鍵:"key" ヴィジュネル方陣を使います</h3>
-
-<figure>
-<img  style="height:50%;float: right; " src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png" />
-<figcaption style="  clear: both;
-    float: right; ">出典: https://upload.wikimedia.org/wikipedia/commons/c/c7/Vigenere-square.png
-</figcaption>
-</figure>
-
-</div>
-<code  class="reveal">We  love Uwajima</code>
-
-</div>
-</div>
-
-<div>
-<h1>「文字を置き換える」換字式暗号</h1>
-<div class="wrapper">
-<code>例4 <span class="reveal">ASCIIコード</span></code>
+<code>例3 <span class="reveal">ASCIIコード</span></code>
 <code>5a 68 20 6f 72 79 68 20 58 7a 64 6d 6c 70 64 </code>
 <h3 class="reveal">↓鍵:16進ASCIIコード</h3>
 
@@ -261,6 +213,7 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 <div class="wrapper">
 <h3>その他いろいろ</h3>
 <ul>
+<li>Vigenere</li>
 <li>モールス符号</li>
 <li>点字(Braille)</li>
 <li>Base64</li>
@@ -282,150 +235,11 @@ W&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;i&nbsp;&nbsp;<br />
 </div>
 </div>
 
-<div>
-<h1>閑話休題 暗号といえば頻度分布解析</h1>
-<div class="wrapper">
-<p>どんな文字が何回暗号文に出てくるか、というのは重要情報</p>
-<a href="http://multidec.web-lab.at/at.php" target="_blank">Multi-Dec -> Analyze Text</a> などでできます
-</div>
-</div>
-
-
-
-<div class="cover">
-<h1>実践編</h1>
-<h3>〜ごたくよりも手を動かそう〜</h3>
-</div>
-
-<div>
-<h1>便利なツールたち</h1>
-<div class="wrapper">
-<ul>
-<li><a href="http://tools.decodeingress.me/" target="_blank">DI Decoding Tools</a> </li>
-<li><a href="http://multidec.web-lab.at/" target="_blank">Multi-Dec BETA 0.994</a></li>
-<li><a href="http://rumkin.com/tools/cipher/" target="_blank">rumkin.com Cipher Tools</a></li>
-</ul>
-<!---inline-blockでQRコードキャプションつきを並べる--->
-<img src="imgs/URL_DITOOL.gif" width="123" height="123" alt=""/>
-<img src="imgs/URL_Multi-Dec.gif" width="123" height="123" alt=""/>
-<img src="imgs/URL_Rumkin.gif" width="123" height="123" alt=""/>
-</div>
-</div>
-
-<div>
-<h1>初級編</h1>
-<div class="wrapper">
-<h2>1ステップで解読完了します</h2>
-<h3>転置式暗号</h3>
-<code>7ur86ux6noitulove</code>
-<code>82niyhinycrv47ie</code>
-
-<h3>換字式暗号</h3>
-<code>fwyghwjz4rb58mv1</code>
-<code>sfyvig4hf42jg2</code>
-<code>0317141304j1702ii0924f</code>
-
-<h3>キーワード置換</h3>
-<code>!@*%(*)4ye57bs7</code>
-
-
-</div>
-</div>
-
-<div>
-<h1>初級編解答 転置式暗号</h1>
-<div class="wrapper">
-<code>7ur86ux6noitulove</code><img src="imgs/7ur86ux6noitulove.gif" width="111" height="111" alt=""/>
-<p class="reveal">ヒント:どう場所を入れ替えればフォーマット通りになるでしょう？</p>
-<h3 class="reveal">答え: 逆から読もう</h3>
-<code class="reveal">evolution6xu68ru7</code>
-</div>
-</div>
-
-<div>
-<h1>初級編解答 転置式暗号</h1>
-<div class="wrapper">
-<code>82niyhinycrv47ie</code><img src="imgs/82niyhinycrv47ie.gif" width="111" height="111" alt=""/>
-<p class="reveal">ヒント: とりあえず改行</p>
-<h3 class="reveal">答え: まず4文字ずつ改行します</h3>
-<code class="reveal">
-82ni<br />
-yhin<br />
-ycrv<br />
-47ie</code>
-<h3 class="reveal">右上から縦に読んでみよう</h3>
-<code  class="reveal">inveniri2hc78yy4</code>
-</div>
-</div>
-
-
-<div>
-<h1>初級編解答 換字式暗号</h1>
-<div class="wrapper">
-<code>fwyghwjz4rb58mv1</code><img src="imgs/fwyghwjz4rb58mv1.gif" width="111" height="111" alt=""/>
-<p class="reveal">ヒント:atbashかRotを試そう</p>
-<h3 class="reveal">答え: Rot+4(数字も)</h3>
-<code class="reveal">jackland8vf92qz5</code>
-</div>
-</div>
-
-<div>
-<h1>初級編解答 換字式暗号</h1>
-<div class="wrapper">
-<code>sfyvig4hf42jg2</code><img src="imgs/sfyvig4hf42jg2.gif" width="99" height="99" alt=""/>
-<p class="reveal">ヒント:atbashかRotを試そう</p>
-<h3 class="reveal">答え: atbash(数字はそのまま)</h3>
-<code class="reveal">hubert4su42qt2</code>
-</div>
-</div>
-
-
-<div>
-<h1>初級編解答 換字式暗号</h1>
-<div class="wrapper">
-<code>0317141304j1702ii0924f</code><img src="imgs/0317141304j1702ii0924f.gif" width="111" height="111" alt=""/>
-<p class="reveal">ヒント: フォーマットをヒントに区切ってみよう</p>
-<h3 class="reveal">答え: 012<->abc</h3>
-<code class="reveal">drone9rc88jy5</code>
-</div>
-</div>
-
-
-
-<div>
-<h1>初級編解答 キーワード置換</h1>
-<div class="wrapper">
-<code>!@*%(*)4ye57bs7</code><img src="imgs/%21%40%2A%25%28%2A%294ye57bs7.gif" width="111" height="111" alt=""/>
-<p class="reveal">ヒント: !@*%(*) と置換できそうなキーワードを探そう</p>
-<h3 class="reveal">答え: !@*%(*) -> symbols</h3>
-<code class="reveal">symbols4ye57bs7</code>
-</div>
-</div>
 
 <div class="cover">
 <h1>暗号発見編</h1>
 </div>
 
-<div>
-<h1>出題アカウント</h1>
-<div class="wrapper">
-Niantic Projectの公式アカウント
-<ul>
-<li><a href="https://plus.google.com/u/0/+NianticProject/posts" target="	_blank">Google+</a></li>
-<li><a href="https://www.facebook.com/NianticProject" target="_blank">Facebook</a></li>
-<li><a href="https://twitter.com/nianticproject" target="_blank">Twitter</a></li></ul>
-Ingressの公式アカウント
-<ul>
-<li><a href="https://www.youtube.com/user/ingress" target="_blank">Youtube</a></li></ul>
-JoJo StrattonのG+アカウント
-<ul>
-<li><a href="https://plus.google.com/u/0/+JoJoStratton/posts" target="_blank">JoJo Stratton</a></li>
-<li>一日一回 #jojoingresswotd のタグで投稿。他の投稿も混ざってます。難しいです</li>
-</ul>
-
-<!--スクショ、リンク--><img src="imgs/URL_G+Niantic.gif" width="147" height="147" alt=""/><img src="imgs/URL_FaceBookNiantic.gif" width="135" height="135" alt=""/><img src="imgs/URL_Twitter_Niantic.gif" width="123" height="123" alt=""/><img src="imgs/URL_Youtube_ingress.gif" width="135" height="135" alt=""/>
-</div>
-</div>
 
 <div>
 <h1>出題方式</h1>
@@ -435,7 +249,6 @@ JoJo StrattonのG+アカウント
 <li><a href="https://plus.google.com/u/0/+NianticProject/posts" target="_blank">G+</a>に投稿される画像※再共有含む</li>
 <li><a href="https://www.youtube.com/user/ingress" target="_blank">Youtube</a>に投稿されるIngress Report</li>
 <li><a href="https://www.facebook.com/NianticProject" target="_blank">Facebookのリンク投稿</a></li>
-<li><a href="https://plus.google.com/u/0/explore/jojoingresswotd" target="_blank">JoJo's Ingress Word of the Day</a></li>
 </ul>
 </div>
 </div>
@@ -457,7 +270,6 @@ JoJo StrattonのG+アカウント
 <li>メタデータを見られるサイト: <a href="http://metapicz.com/#landing" target="_blank">metapicz</a>など</li>
 </ul>
 </ul>
-<img src="imgs/URL_Metapicz.gif" width="111" height="111" alt="" />
 </div>
 </div>
 
@@ -468,9 +280,8 @@ JoJo StrattonのG+アカウント
 <li>動画中の注釈として暗号が表示される</li>
 <li>動画をスローモーション再生して注釈を探す</li>
 <li class="reveal">そんな必要はありません！</li>
-<ul class="reveal"><li>https://www.youtube.com/annotations_invideo?video_id= にビデオIDをつけて飛ぶ</li></ul>
+<ul class="reveal"><li><code>https://www.youtube.com/annotations_invideo?video_id=</code> にビデオIDをつけて飛ぶ</li></ul>
 </ul>
-<img src="imgs/URL_Youtube.gif" width="147" height="147" />
 </div>
 </div>
 
@@ -495,109 +306,6 @@ JoJo StrattonのG+アカウント
 </div>
 </div>
 
-
-
-
-<div class="cover">
-<h1>実践編2</h1>
-<h3>〜ちょっと難しくなります〜</h3>
-</div>
-
-<div>
-<h1>便利なツールたち(再掲)</h1>
-<div class="wrapper">
-<ul>
-<li><a href="http://tools.decodeingress.me/" target="_blank">DI Decoding Tools</a> </li>
-<li><a href="http://multidec.web-lab.at/" target="_blank">Multi-Dec BETA 0.994</a></li>
-<li><a href="http://rumkin.com/tools/cipher/" target="_blank">rumkin.com Cipher Tools</a></li>
-</ul>
-<!---inline-blockでQRコードキャプションつきを並べる--->
-<img src="imgs/URL_DITOOL.gif" width="123" height="123" alt=""/>
-<img src="imgs/URL_Multi-Dec.gif" width="123" height="123" alt=""/>
-<img src="imgs/URL_Rumkin.gif" width="123" height="123" alt=""/>
-</div>
-</div>
-
-<div>
-<h1>中級編</h1>
-<div class="wrapper">
-<h2>2ステップで解読完了 or キーワード置換にイングレス知識がいる</h2>
-<h3>転置式暗号</h3>
-<code>17679808274598486525574865</code>
-<code>22282324391030370113220106262608</code>
-<code>whuyfqdqfa1jw87zj4</code>
-<code>sent3vfti4miz3</code>
-<code>zcdsdbshnm8dj16tw2</code>
-
-
-</div>
-</div>
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
-<code>17679808274598486525574865</code>
-<p class="reveal">ヒント:数字の頻度とフォーマットが頼り</p>
-<code class="reveal">17 67 98 08 27 45 98 48 65 25 57 48 65</code>
-<h3 class="reveal">答え: リバース→Ascii(10進)→リバース</h3>
-<code class="reveal">56847552568489547280897671</code>
-<code class="reveal">8TK48TY6HPYLG</code>
-<code class="reveal">GLYPH6YT84KT8</code>
-</div>
-</div>
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
-<code>22282324391030370113220106262608</code>
-<p class="reveal">ヒント:よくわかんなかったらとりあえず区切る</p>
-<code class="reveal">22 28 23 24 39 10 30 37 01 13 22 01 06 26 26 08</code>
-<h3 class="reveal">答え: 数字のRot+5→Ascii(10進)</h3>
-<code class="reveal">77737879846585825668775651717153</code>
-<code class="reveal">MINOTAUR8DM83GG5</code>
-</div>
-</div>
-
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
-<code>whuyfqdqfa1jw87zj4</code>
-<p class="reveal">ヒント:基礎的な換字式暗号の組み合わせ</p>
-<code class="reveal">xivzgrergb2kx98ak5</code>
-<h3 class="reveal">答え: Rot+1(数字も)→atbash(英字のみ)</h3>
-<code class="reveal">creativity2pc98zp5</code>
-</div>
-</div>
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
-<code>sent3vfti4miz3</code>
-<p class="reveal">ヒント: 転置式暗号と換字式暗号の組み合わせ</p>
-
-<h3 class="reveal">答え: まずRect7→縦読み</h3>
-<code class="reveal">
-sent3vf<br />
-ti4miz3</code>
-<code class="reveal">stein4tm3ivzf3</code>
-<h3 class="reveal">答え: ivを4に、steinをlightmanに</h3>
-<code class="reveal">lightman4tm34zf3</code>
-</div>
-</div>
-
-<div>
-<h1>中級編解答</h1>
-<div class="wrapper">
-<code>zcdsdbshnm8dj16tw2</code>
-<p class="reveal">ヒント: 換字式暗号、そして…</p>
-
-
-<code class="reveal">adetection9ek27ux3</code>
-<h3 class="reveal">答え: Rot+1, A detection → algorithm</h3>
-<code class="reveal">algorithm9ek27ux3</code>
-</div>
-</div>
 
 
 
