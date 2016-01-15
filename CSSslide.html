@@ -17,12 +17,12 @@
 <body>
 
 <div class="cover">
-<h1>Aomaly Lightning Talk</h1>
+<h1>Aomaly Lightning Talk - デコード超入門 - </h1>
 <div class="wrapper">
 <h3>Presented by <span class="resistance">井伊狐狸(EcoliW3110)</span></h3>
 <h4>2016/1/16 @青山学院大学相模原キャンパス</h4>
 <figure>
-<figcaption style="clear:both;float:right">スライド置き場は ！</figcaption>
+<figcaption style="clear:both;float:right">スライド置き場は <a href="http://bit.ly/5minDecode" target="_blank">http://bit.ly/5minDecode</a></figcaption>
 <figcaption style="clear:both;float:right"><a href="http://ecoliw3110.github.io/20150920-decodingSeminar/IngressDecodeCheatSheet.pdf" target="_blank">チートシートはこちらのリンクからどうぞ</a></figcaption>
 </figure>
 </div>
@@ -54,6 +54,103 @@
 <li class="reveal">パズルとして楽しい</li>
 </ul>
 </div>
+
+
+<div class="cover">
+<h1>暗号発見編</h1>
+</div>
+
+<div>
+<h1>出題方式</h1>
+<div class="wrapper">
+
+<ul>
+<li><a href="https://plus.google.com/u/0/+NianticProject/posts" target="_blank">G+</a>に投稿される画像※再共有含む</li>
+<li><a href="https://www.youtube.com/user/ingress" target="_blank">Youtube</a>に投稿されるIngress Report</li>
+<li><a href="https://www.facebook.com/NianticProject" target="_blank">Facebookのリンク投稿</a></li>
+</ul>
+</div>
+</div>
+
+<div>
+<h1>画像から暗号を見つける方法</h1>
+<div class="wrapper">
+<h3>png画像とjpg画像の2種類</h3>
+
+<ul style="float:left;">
+<li>png画像…画像中に薄い文字で(あるいはそのまま)暗号が書いてある</li>
+<ul class="reveal"><li>画像をフォトレタッチソフトでコントラスト調整→書き起こし！</li></ul>
+<li>jpg画像…画像のメタデータに暗号が仕込まれている</li>
+<ul class="reveal">
+<li>画像をダウンロード→メタデータを見られるサイトに放り込む！</li>
+<li>メタデータを見られるサイト: <a href="http://metapicz.com/#landing" target="_blank">metapicz</a>など</li>
+</ul>
+</ul>
+<img src="imgs/SS_Gplus.png" style="width:30%;hight:auto;float:right;" alt=""/>
+
+</div>
+</div>
+
+<div>
+<h1>png画像から暗号を見つける方法</h1>
+<div class="wrapper">
+<div class="inline-block" style="width:45%;height:auto;">
+<h2>元画像</h2>
+<img src="imgs/Watch.png" style="width:100%;height:auto;" alt=""/>
+</div>
+<div class="inline-block" style="width:45%;height:auto;">
+<h2>明るさなどを調整した画像</h2>
+<img src="imgs/Watch_retouched.png" style="width:100%;height:auto;" alt=""/>
+</div>
+
+</div>
+</div>
+
+<div>
+<h1>jpg画像から暗号を見つける方法</h1>
+
+<div class="inline-block" style="width:30%;height:auto;">
+<h2>metapicz</h2>
+<img src="imgs/jpg_ss_00.png" style="width:100%;height:auto;" alt=""/>
+</div>
+
+<div class="inline-block" style="width:30%;height:auto;" >
+  <h2>画像をドラッグ&amp;ドロップ</h2>
+  <img src="imgs/jpg_ss_01.png" style="width:100%;height:auto;" alt=""/>
+</div>
+
+
+<div class="inline-block" style="width:30%;height:auto;" >
+  <h2>メタデータが現れる</h2>
+  <img src="imgs/jpg_ss_02.png" style="width:100%;height:auto;" alt=""/>
+</div>
+
+</div>
+
+<div>
+<h1>Ingress Reportから暗号を見つける方法</h1>
+<div class="wrapper">
+<ul>
+<li>動画中の注釈として暗号が表示される</li>
+<li>動画をスローモーション再生して注釈を探す</li>
+<li class="reveal">そんな必要はありません！</li>
+<ul class="reveal"><li><code>https://www.youtube.com/annotations_invideo?video_id=</code> にビデオID(https://www.youtube.com/watch?v= に続く英数字記号11文字)をつけて飛ぶ</li></ul>
+</ul>
+</div>
+</div>
+
+
+<div>
+<h1>Facebookのリンク投稿から暗号を見つける方法</h1>
+<div class="wrapper">
+<ul>
+<li>Facebook投稿を見る</li>
+<ul class="reveal"><li>リンク記事の注釈欄に暗号があるのでコピペorソースを見て該当部分をコピペ</li></ul>
+</ul><img src="imgs/SS_FB_Niantic.png" class="reveal" width=50% alt=""/>
+</div>
+</div>
+
+
 
 <div class="cover">
 <h1>理論編</h1>
@@ -110,40 +207,14 @@
 </div>
 </div>
 
-
-<div>
-<h1>暗号入門</h1>
-<div class="wrapper">
-<h3>もう一度:Ingressの暗号は「解かせるための暗号」です！</h3>
-<ul>
-<li>「場所を入れ替える」</li>
-<li>「文字を置き換える」</li></ul>
-<p>これだけ押さえればとりあえずOK!</p>
-
-
-</div>
-</div>
-
-
-<div>
-<h1>用語解説</h1>
-<div class="wrapper centering">
-<div class="centering">平文<br /><code>We love Uwajima</code></div>
-<div class="inline-block centering"><h5>▼</h5><h2>暗号化</h2><h5>▼</h5></div>
-<div class="inline-block centering">　<h3>←鍵→</h3>　</div>
-<div class="inline-block centering"><h5>▲</h5><h2>復号化</h2><h5>▲</h5></div>
-<div class="centering">暗号文<br /><code>Zh oryh Xzdmlpd</code></div>
-</div>
-</div>
-
 <div>
 <h1>「場所を入れ替える」転置式暗号</h1>
 <div class="wrapper">
 <code>例1 <span class="reveal">Reverse</span></code>
-<code>amijawU evol eW</code>
+<code>7ur86ux6noitulove</code>
 <h3 class="reveal">↓鍵: 後ろから読むだけ</h3>
 <div class="reveal">
-<code>We love Uwajima</code>
+<code class="reveal">evolution6xu68ru7</code>
 </div>
 </div>
 </div>
@@ -152,32 +223,29 @@
 <h1>「場所を入れ替える」転置式暗号</h1>
 <div class="wrapper">
 <code>例2 <span class="reveal">シーザーボックス暗号</span></code>
-<code>Wlewieo amvUja 
-</code>
-<h3 class="reveal">↓鍵:5文字ごとに改行、左から縦読み</h3>
+<code>82niyhinycrv47ie</code>
+<h3 class="reveal">↓鍵:4文字ごとに改行、mから縦読み</h3>
 <div class="reveal">
-<code>
-Wlewi<br />
-eo am<br />
-&nbsp;vUja
-</code>
+<code class="reveal">
+82ni<br />
+yhin<br />
+ycrv<br />
+47ie</code>
 </div>
 </div>
 </div>
-
-
 
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
 <code>例1 <span class="reveal">シーザー暗号/ROTn</span></code>
-<code>Zh oryh Xzdmlpd</code>
-<h3 class="reveal">↓鍵:アルファベット順に3文字ずらす</h3>
+<code>fwyghwjz4rb58mv1</code>
+<h3 class="reveal">↓鍵:アルファベット順に4文字ずらす</h3>
 
-<code  class="reveal">Yg nqxg Wyclkoc</code>
-<code  class="reveal">Xf mpwf Vxbkjnb</code>
-<code  class="reveal">We  love Uwajima</code>
-
+<code  class="reveal">gxzhixka5sc69nw2</code>
+<code  class="reveal">hyaijylb6td70ox3</code>
+<code  class="reveal">izbjkzmc7ue81py4</code>
+<code  class="reveal">jackland8vf92qz5</code>
 </div>
 </div>
 
@@ -185,26 +253,23 @@ eo am<br />
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
 <code>例2 <span class="reveal">Atbash</span></code>
-<code>Dv olev Fdzqrnz</code>
+<code>sfyvig4hf42jg2</code>
 <h3 class="reveal">↓鍵:AをZ, BをY…に置き換える</h3>
-
-<code  class="reveal">We  love Uwajima</code>
+<code  class="reveal">hubert4su42qt2</code>
 
 </div>
 </div>
-
-
 
 <div>
 <h1>「文字を置き換える」換字式暗号</h1>
 <div class="wrapper">
 <code>例3 <span class="reveal">ASCIIコード</span></code>
-<code>5a 68 20 6f 72 79 68 20 58 7a 64 6d 6c 70 64 </code>
-<h3 class="reveal">↓鍵:16進ASCIIコード</h3>
+<code>56 84 75 52 56 84 89 54 72 80 89 76 71 </code>
+<h3 class="reveal">↓鍵:10進ASCIIコード</h3>
 
-<code  class="reveal">We love Uwajima</code>
+<code  class="reveal">GLYPH6YT84KT8</code>
 
-<span class="reveal">10進・8進・2進などなど…</span>
+<span class="reveal">16進・8進・2進などなど…</span>
 </div>
 </div>
 
@@ -213,10 +278,10 @@ eo am<br />
 <div class="wrapper">
 <h3>その他いろいろ</h3>
 <ul>
-<li>Vigenere</li>
+<li>012<->abc</li>
 <li>モールス符号</li>
 <li>点字(Braille)</li>
-<li>Base64</li>
+<li>ガラケー英字入力</li>
 </ul>
 </div>
 </div>
@@ -236,77 +301,6 @@ eo am<br />
 </div>
 
 
-<div class="cover">
-<h1>暗号発見編</h1>
-</div>
-
-
-<div>
-<h1>出題方式</h1>
-<div class="wrapper">
-
-<ul>
-<li><a href="https://plus.google.com/u/0/+NianticProject/posts" target="_blank">G+</a>に投稿される画像※再共有含む</li>
-<li><a href="https://www.youtube.com/user/ingress" target="_blank">Youtube</a>に投稿されるIngress Report</li>
-<li><a href="https://www.facebook.com/NianticProject" target="_blank">Facebookのリンク投稿</a></li>
-</ul>
-</div>
-</div>
-
-<div>
-<h1>画像から暗号を見つける方法</h1>
-<div class="wrapper">
-<h3>png画像とjpg画像の2種類</h3>
-
-<ul>
-
-<li>png画像…画像中に薄い文字で(あるいはそのまま)暗号が書いてある</li>
-<ul class="reveal"><li>画像をフォトレタッチソフトでコントラスト調整→書き起こし！</li></ul>
-
-<li>jpg画像…画像のメタデータに暗号が仕込まれている</li>
-
-<ul class="reveal">
-<li>画像をダウンロード→メタデータを見られるサイトに放り込む！</li>
-<li>メタデータを見られるサイト: <a href="http://metapicz.com/#landing" target="_blank">metapicz</a>など</li>
-</ul>
-</ul>
-</div>
-</div>
-
-<div>
-<h1>Ingress Reportから暗号を見つける方法</h1>
-<div class="wrapper">
-<ul>
-<li>動画中の注釈として暗号が表示される</li>
-<li>動画をスローモーション再生して注釈を探す</li>
-<li class="reveal">そんな必要はありません！</li>
-<ul class="reveal"><li><code>https://www.youtube.com/annotations_invideo?video_id=</code> にビデオIDをつけて飛ぶ</li></ul>
-</ul>
-</div>
-</div>
-
-
-<div>
-<h1>Facebookのリンク投稿から暗号を見つける方法</h1>
-<div class="wrapper">
-<ul>
-<li>Facebook投稿を見る</li>
-<ul class="reveal"><li>リンク記事の注釈欄に暗号があるのでコピペorソースを見て該当部分をコピペ</li></ul>
-</ul><img src="imgs/SS_FB_Niantic.png" class="reveal" width=50% alt=""/>
-</div>
-</div>
-
-<div>
-<h1>JoJo's Ingress Word of the Day</h1>
-<div class="wrapper">
-<ul>
-<li>G+投稿のリンク先に飛ぶ</li>
-<li>隠し文字などの方法で暗号がどこかに隠れている</li>
-</ul><img src="imgs/SS_jojowotd.png" class="reveal" width=50% alt=""/>
-</div>
-</div>
-
-
 
 
 <div>
@@ -322,6 +316,7 @@ eo am<br />
 <li><a href="https://note.mu/t_tutiya/n/n212e3328b992" target="_blank">Ingress : パスコードの発見／解読方法の例（翻訳記事）</a></li>
 <li><a href="http://blog.livedoor.jp/lava3/search?q=CODE+BREAKING" target="_blank">未来永劫初心者日記: Ingress:CODE BREAKING 暗号解読</a></li>
 <li><a href="http://aganism.com/game/ingress/passcodes-decoding/" target="_blank">Aganism: 【Ingressのパスコード 解読してみた】動画観てたらそれっぽいものを見つけたもので…</a></li>
+<li><a href="http://bit.ly/EcoliW3110" target="_blank">井伊狐狸に弟子入り http://bit.ly/EcoliW3110 </a></li>
 </ul>
 </div>
 </div>
